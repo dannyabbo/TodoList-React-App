@@ -1,0 +1,102 @@
+body{
+    background-color: #1789d6;
+    
+    
+    font-family: Helvetica, serif;
+    margin: 0;
+    color: #fff;
+}
+
+.App  {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.Todo-wrapper {
+    background-color: #121018;
+    border-radius: 5px;
+    padding: 35px;
+}
+
+.Todo-wrapper h1 {
+    margin: 0px 0px 30px 0px;
+}
+
+.TodoForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 400px;
+    border: 1px solid #1789d6;
+    margin-bottom: 30px;
+}
+
+.TodoForm input{
+    background: transparent;
+    border: 0;
+    padding: 10px;
+    color: #1789d6;
+    font-size: 16px;
+    width: 100%;
+}
+
+.TodoForm input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #1789d6;
+    opacity: 0.5; /* Firefox */
+}
+
+.TodoForm button{
+    cursor: pointer;
+    background: #1789d6;
+    border: 0px solid #1789d6;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    min-width: 125px;
+}
+
+.TodoForm button:hover{
+    background: rgba(23, 137, 214, 0.8);
+}
+
+.Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1789d6;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+    cursor: pointer;
+}
+
+.Todo:hover {
+    background: rgba(23, 137, 214, 0.9);
+}
+
+.Todo p {
+    margin: 0;
+    width: 100%;
+    text-align: start;
+    padding: 15px;
+}
+
+.Todo p.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.Todo div{
+    display: flex;
+    min-width: 50px;
+    justify-content: space-around;
+    padding: 10px;
+}
+.Todo div svg:hover{
+    opacity: 0.8;
+}
+
